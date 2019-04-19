@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Missão Cinema</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Encontre o filme que você deseja em poucos segundos!">
+    <meta name="author" content="Wenderson Jr.">
+    <meta name="keywords" content="cinema, filmes, cartaz, filme, classificação">
+    <meta name="robots" content="index, follow"> 
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="src/css/style.css"/>
+    <link rel="stylesheet" href="src/css/my-slider.css"/>
+    <link rel="shortcut icon" href="src/image/icone.png" type="image/x-icon" />
+    <script src="src/js/ism-2.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="container-slide">
+        <div class="ism-slider" data-transition_type="zoom" data-play_type="loop" data-image_fx="zoompan" id="my-slider">
+            <ol>
+                <li>
+                    <img src="src/image/slides/_u/1554854352545_839186.jpg">
+                    <div class="ism-caption ism-caption-0">NÃO SABE O QUE ASSISTIR?</div>
+                </li>
+                <li>
+                    <img src="src/image/slides/_u/1554854738206_53689.jpg">
+                    <div class="ism-caption ism-caption-0">FICA HORAS EM FRENTE AO MONITOR SEM SABER O QUE ESCOLHER?</div>
+                </li>
+                <li>
+                    <img src="src/image/slides/_u/1554854737249_503715.jpg">
+                    <div class="ism-caption ism-caption-0">RELAXA, CHAMAMOS NOSSOS ESPECIALISTAS PARA TE AJUDAR</div>
+                </li>
+                <li>
+                    <img src="src/image/slides/_u/1554855061645_60799.jpeg">
+                    <div class="ism-caption ism-caption-0">UMA EQUIPE FORMADA PELOS MELHORES</div>
+                </li>
+                <li>
+                    <img src="src/image/slides/_u/1554855062474_169176.jpg">
+                    <div class="ism-caption ism-caption-0">GENTE QUE LEVA FILMES A SÉRIO (MUITO SÉRIO)</div>
+                </li>
+                <li>
+                    <img src="src/image/slides/_u/1554854726152_848580.jpg">
+                    <div class="ism-caption ism-caption-0">VEJA ABAIXO O QUE RESERVAMOS PARA VOCÊ!</div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="tab">
+            <button class="tablinks" onclick="abrirTab(event, 'maisPopulares')" id="defaultOpen"> Mais Populares</button>
+            <button class="tablinks" onclick="abrirTab(event, 'maisBemVotados')"> Melhores Pontuações</button>
+            <button class="tablinks" onclick="abrirTab(event, 'maisVotados')"> Mais Votados</button>
+            <button class="tablinks" onclick="abrirTab(event, 'melhoresDoAno')"> Melhores do Ano</button>
+            <button class="tablinks" onclick="abrirTab(event, 'buscarFilme')">Pesquisar Filme</button>
+        </div>
+
+        <div id="maisPopulares" class="tabcontent">
+            <section>
+                <h1 align="center">Mais Populares</h1>
+                <section id="resultadoMaisPopulares">
+                
+                </section>
+            </section>
+        </div>
+
+        <div id="maisBemVotados" class="tabcontent">
+            <section>
+                <h1 align="center">Melhores Pontuações</h1>
+                <section id="resultadoMaisBemVotados">
+                
+                </section>
+            </section>
+        </div>
+
+        <div id="maisVotados" class="tabcontent">
+            <section>
+                <h1 align="center">Mais Votados</h1>
+                <section id="resultadoMaisVotados">
+                
+                </section>
+            </section>
+        </div>
+
+        <div id="melhoresDoAno" class="tabcontent">
+            <form action="" id="pesquisarMelhoresDoAno">
+                <h1 align="center">Melhores do Ano</h1>
+                <div class="pesquisar">
+                    <input id="ano" type="text" name="ano" placeholder="Digite um ano no formato de XXXX" onkeypress="return SomenteNumero(event)">
+                </div>
+                <input type="submit" value="Pesquisar" align="center">
+            </form>
+            <hr>
+            <section id="resultadoMelhoresDoAno">
+                
+            </section>
+        </div>
+
+        <div id="buscarFilme" class="tabcontent">
+            <form action="" id="pesquisar">
+                <h1 align="center">Pesquisar Filme</h1>
+                <div class="pesquisar">
+                    <input id="filme" type="text" name="filme" placeholder="Digite o nome do filme desejado ...">
+                </div>
+                <input type="submit" value="Pesquisar" align="center">
+            </form>
+            <hr>
+            <section id="resultado">
+                
+            </section>
+        </div>
+
+        
+
+    </div>
+    <script src="src/js/scripts.js"></script>
+</body>
+</html>
