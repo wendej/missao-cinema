@@ -502,11 +502,11 @@ $('#pesquisarMelhoresDoAno').submit(function(event) {
 				}));
 
 				$('#card-container-ano'+i).append($('<h2>', {
-					id: 'header'+i,
+					id: 'header-ano'+i,
 					text: response.results[i].original_title
 				}));
 
-				$('#header'+i).append($('<span>', {
+				$('#header-ano'+i).append($('<span>', {
 					style: 'float:right; background-color: '+cor+'; padding: 1%;',
 					text: response.results[i].vote_average
 				}));
